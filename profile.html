@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    .header {
+      background: #FF6C22;
+      color: white;
+      padding: 50px 16px 30px;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      position: relative;
+    }
+
+    .header .back {
+      position: absolute;
+      left: 16px;
+      top: 20px;
+      font-size: 22px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: white;
+      margin: -60px auto 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: #FF6C22;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .profile-name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .top-actions {
+      margin: 25px 20px 15px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 10px;
+      text-align: center;
+    }
+
+    .top-actions div {
+      flex: 1;
+    }
+
+    .top-actions i {
+      font-size: 22px;
+      color: #FF6C22;
+    }
+
+    .top-actions p {
+      margin-top: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #444;
+    }
+
+    .settings-list {
+      margin: 0 20px 80px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .settings-list div {
+      padding: 18px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+
+    .settings-list div:last-child {
+      border-bottom: none;
+    }
+
+    .settings-list span {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 500;
+      color: #444;
+    }
+
+    .settings-list i.fa-chevron-right {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .settings-list span i {
+      font-size: 18px;
+      margin-right: 12px;
+      color: #00C897;
+    }
+
+    .checkout-btn {
+      position: fixed;
+      bottom: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #FF6C22;
+      color: white;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      z-index: 100;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    .nav div {
+      flex: 1;
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+    }
+
+    .nav i {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .nav .active {
+      color: #FF6C22;
+    }
+
+    @media (max-width: 600px) {
+      .top-actions {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .settings-list div {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+<style>
+    /* .top-actions {
+      display: flex;
+      justify-content: space-around;
+      padding: 16px 10px;
+      background: #f9f9f9;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+  
+    .top-actions button {
+      background: none;
+      border: none;
+      flex: 1;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 10px;
+      transition: background 0.2s ease;
+    }
+  
+    .top-actions button:hover {
+      background: #ececec;
+      border-radius: 12px;
+    }
+  
+    .top-actions i {
+      font-size: 24px;
+      color: #444;
+    }
+
+    .top-actions p {
+      margin: 8px 0 0;
+    }
+/*
+    /* Modal popup */
+     .modal {
+      display: none;
+      position: fixed;
+      z-index: 99;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+      background: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 16px;
+      width: 80%;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .close {
+      color: #999;
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #000;
+    }
+  .top-actions {
+    display: flex;
+    justify-content: start;
+    gap: 12px;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    background: #f9f9f9;
+    border-radius: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+  .top-actions button {
+    flex: 0 0 auto;
+    width: 100px;
+    border: none;
+    background: white;
+    border-radius: 12px;
+    padding: 10px 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .top-actions button:hover {
+    background: #eee;
+  }
+
+  .top-actions i {
+    font-size: 20px;
+    color: #444;
+  }
+
+  .top-actions p {
+    margin: 8px 0 0;
+    font-size: 14px;
+  }
+
+  /* Optional: hide scrollbar but still scrollable */
+  .top-actions::-webkit-scrollbar {
+    display: none;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <span class="back"><i class="fas fa-arrow-left"></i></span>
+    <div class="circle">!</div>
+    <div class="profile-name">Shakil Islam</div>
+  </div>
+
+  <!-- Top Actions -->
+  <div class="top-actions">
+    <a href="">
+        <button onclick="openModal('All Order')">
+            <i class="fas fa-truck"></i>
+            <p>All Order</p>
+        </button>
+    </a>
+    <a href="">
+        <button onclick="openModal('Voucher')">
+            <i class="fas fa-gift"></i>
+            <p>Voucher</p>
+        </button>
+    </a>
+    <a href="user_address.html">
+        <button onclick="openModal('Address')">
+            <i class="fas fa-home"></i>
+            <p>Address</p>
+        </button>
+    </a>
+  </div>
+
+
+  <!-- Modal -->
+  <div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modalText">Popup content here</p>
+    </div>
+  </div>
+
+  <!-- Settings List -->
+  <div class="settings-list">
+    <a href="#" style="text-decoration: none; color: inherit;">
+      <div>
+        <span><i class="fas fa-user-circle"></i>My Profile</span>
+        <i style="margin-left: 280px;margin-top: -15px;" class="fas fa-chevron-right"></i>
+      </div>
+    </a>
+    <a href="#" style="text-decoration: none; color: inherit;">
+      <div>
+        <span><i class="fas fa-bell"></i>Notification</span>
+        <i style="margin-left: 280px;margin-top: -15px;" class="fas fa-chevron-right"></i>
+      </div>
+    </a>
+    <a href="#" style="text-decoration: none; color: inherit;">
+      <div>
+        <span><i class="fas fa-cog"></i>Setting</span>
+        <i style="margin-left: 280px;margin-top: -15px;" class="fas fa-chevron-right"></i>
+      </div>
+    </a>
+  </div>
+
+  <!-- Checkout Button -->
+  <div class="checkout-btn">
+    <i class="fas fa-shopping-basket"></i>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <div><a href="restaurants.php"><i class="fas fa-home"></i></a>Home</div>
+    <div><i class="fas fa-building"></i>Stores</div>
+    <div><i class="fas fa-location-arrow tracker-icon"></i>Tracker</div>
+    <div class="active"><i class="fas fa-user"></i>Profile</div>
+  </div>
+
+
+  <!-- JavaScript -->
+<script>
+    function openModal(content) {
+      document.getElementById('modalText').textContent = content + ' clicked!';
+      document.getElementById('popupModal').style.display = 'block';
+    }
+  
+    function closeModal() {
+      document.getElementById('popupModal').style.display = 'none';
+    }
+  
+    // Optional: close on outside click
+    window.onclick = function(event) {
+      const modal = document.getElementById('popupModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>

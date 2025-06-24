@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Test</title>
+</head>
+<body>
+    <script>
+        function payWithSquad() {
+            SquadPay.init({
+                key: 'sandbox_pk_cdce2a1ec6c1b59517e2aea5d724cc47a06ec96e9cd1', // Replace with your actual Squad public key
+                email: 'customer@example.com',
+                amount: 5000, // Amount in kobo (5000 kobo = 50 NGN)
+                transaction_ref: 'txn_' + Math.floor(Math.random() * 1000000),
+                currency_code: 'NGN',
+                onSuccess: function(response) {
+                    console.log('Payment successful:', response);
+                    // Send transaction details to backend for verification
+                    fetch('verify_payment.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(response)
+                    })
+                    .then(res => res.json())
+                    .then(data => console.log(data))
+                    .catch(error => console.error(error));
+                },
+                onError: function(response) {
+                    console.error('Payment failed:', response);
+                },
+                onClose: function() {
+                    console.log('Payment closed');
+                }
+            });
+        }
+        </script>
+
+    <button onclick="payWithSquad()">Pay Now</button>
+    <script src="https://checkout.squadco.com/widget/squad.min.js"></script>
+
+</body>
+</html>

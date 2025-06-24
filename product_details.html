@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid #eee;
+    }
+
+    .header i {
+      margin-right: 12px;
+      cursor: pointer;
+    }
+
+    .product-image {
+      position: relative;
+      background-color: #e6faec;
+      height: 200px;
+      border-radius: 20px;
+      margin: 16px;
+    }
+
+    .favorite-icon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .carousel-dots {
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+        z-index: 2;
+    }
+
+
+    .dot {
+      width: 20px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #c4e1cc;
+    }
+
+    .dot.active {
+      background-color: #ff5c00;
+    }
+
+    .product-info {
+      padding: 0 16px;
+    }
+
+    .product-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 8px 0 4px;
+    }
+
+    .product-weight {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .price-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #555;
+    }
+
+    .new-price {
+      color: #ff5c00;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .quantity-btn {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 18px;
+      color: green;
+      background: white;
+      cursor: pointer;
+    }
+
+    .quantity-value {
+      margin: 0 10px;
+      font-size: 18px;
+    }
+
+    .product-details {
+      padding: 0 16px;
+      margin-top: 16px;
+    }
+
+    .product-details h3 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .product-details p {
+      color: #888;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-top: 8px;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      gap: 12px;
+    }
+
+    .cart-btn {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #ccc;
+      border-radius: 16px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    .buy-btn {
+      flex: 1;
+      background-color: #ff5c00;
+      color: white;
+      border: none;
+      border-radius: 16px;
+      height: 60px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        font-size: 16px;
+      }
+
+      .product-title {
+        font-size: 18px;
+      }
+
+      .buy-btn {
+        font-size: 14px;
+      }
+    }
+    .carousel-container {
+  position: relative;
+  margin: 16px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel img {
+  flex: 0 0 100%;
+  height: 200px;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <i class="fas fa-arrow-left"></i>
+    Product Details
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="https://via.placeholder.com/600x300/DCFCE7/000000?text=Image+1" alt="Image 1" />
+      <img src="https://via.placeholder.com/600x300/DEF6E0/000000?text=Image+2" alt="Image 2" />
+      <img src="https://via.placeholder.com/600x300/E8FBEA/000000?text=Image+3" alt="Image 3" />
+    </div>
+    <div class="favorite-icon">
+      <i class="far fa-heart"></i>
+    </div>
+    <div class="carousel-dots" id="dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <div class="product-info">
+    <div class="product-title">Cauliflower Bangladeshi</div>
+    <div class="product-weight">Weight: 5Kg</div>
+
+    <div style="display: flex; align-items: center;">
+      <div class="price-section">
+        <span class="old-price">$30</span>
+        <span class="new-price">$20</span>
+      </div>
+      <div class="quantity">
+        <button class="quantity-btn" onclick="decrease()">-</button>
+        <span class="quantity-value" id="qty">2</span>
+        <button class="quantity-btn" onclick="increase()">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-details">
+    <h3>Product Details</h3>
+    <p>Duis aute veniam veniam qui aliquip irure duis sint magna occaecat dolore nisi culpa do. Est nisi incididunt aliquip commodo aliqua tempor.</p>
+  </div>
+
+  <div class="footer">
+    <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+
+<script>
+  let qty = 2;
+  const qtyDisplay = document.getElementById("qty");
+
+  function increase() {
+    qty++;
+    qtyDisplay.textContent = qty;
+  }
+
+  function decrease() {
+    if (qty > 1) {
+      qty--;
+      qtyDisplay.textContent = qty;
+    }
+  }
+
+  const carousel = document.querySelector(".carousel");
+  const dots = document.querySelectorAll(".carousel-dots .dot");
+
+  carousel.addEventListener("scroll", () => {
+    const scrollLeft = carousel.scrollLeft;
+    const width = carousel.offsetWidth;
+    const index = Math.round(scrollLeft / width);
+    dots.forEach(dot => dot.classList.remove("active"));
+    if (dots[index]) dots[index].classList.add("active");
+  });
+</script>
+
+
+</body>
+</html>

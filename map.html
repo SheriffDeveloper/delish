@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Tracker Map</title>
+  <style>
+    #map {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+let map, marker1, marker2, pathLine;
+let coordFromDB = null;
+
+// Fetch coordinates from PHP
+async function fetchInitialCoordinates() {
+  const res = await fetch("get_coordinates.php");
+  return await res.json();
+}
+
+function initMap() {
+  fetchInitialCoordinates().then(dbCoord => {
+    coordFromDB = { lat: parseFloat(dbCoord.latitude), lng: parseFloat(dbCoord.longitude) };
+
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 14,
+      center: coordFromDB,
+    });
+
+    // Marker from DB
+    marker1 = new google.maps.Marker({
+      position: coordFromDB,
+      map,
+      label: "A",
+      title: "From DB"
+    });
+
+    // Polyline
+    pathLine = new google.maps.Polyline({
+      path: [coordFromDB],
+      geodesic: true,
+      strokeColor: "#007BFF",
+      strokeOpacity: 1.0,
+      strokeWeight: 4,
+      map
+    });
+
+    // Get user location
+    if (navigator.geolocation) {
+      navigator.geolocation.watchPosition(position => {
+        const userLatLng = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        if (!marker2) {
+          marker2 = new google.maps.Marker({
+            position: userLatLng,
+            map,
+            label: "B",
+            title: "You"
+          });
+        } else {
+          marker2.setPosition(userLatLng);
+        }
+
+        // Update polyline
+        pathLine.setPath([coordFromDB, userLatLng]);
+
+        // Center map to include both markers
+        const bounds = new google.maps.LatLngBounds();
+        bounds.extend(coordFromDB);
+        bounds.extend(userLatLng);
+        map.fitBounds(bounds);
+      });
+    } else {
+      alert("Geolocation is not supported.");
+    }
+  });
+}
+</script>
+
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap">
+</script>
+
+</body>
+</html>

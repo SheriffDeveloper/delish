@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DelishGo - Pay with Solana</title>
+  <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    button {
+      padding: 12px 24px;
+      background-color: #ff6b6b;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #ff3b3b;
+    }
+    input {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    #walletAddress, #balance, #message {
+      margin-top: 20px;
+      font-size: 16px;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>DelishGo 🚀</h1>
+  <h2>Fast Drone Delivery - Pay with Solana</h2>
+
+  <button onclick="connectWallet()">Connect Wallet</button>
+
+  <div id="walletAddress"></div>
+  <div id="balance"></div>
+
+  <input id="amountInput" type="number" placeholder="Amount (SOL)">
+  <br>
+  <button onclick="payNow()">Pay Now</button>
+
+  <div id="message"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const recipientAddress = '4WFiGp7BioVceRMi8mNUtz7UbvDYRiaJbkTX6MBNFMAc';
+      let provider = null;
+      let connection = new solanaWeb3.Connection(solanaWeb3.clusterApiUrl('devnet'));
+      async function connectWallet() {
+        try {
+          if (!window.solana || !window.solana.isPhantom) {
+            alert('Please install Phantom Wallet!');
+            return;
+          }
+          provider = window.solana;
+          await provider.connect();
+          document.getElementById('walletAddress').innerText = `Wallet: ${provider.publicKey.toString()}`;
+          const balance = await connection.getBalance(provider.publicKey);
+          document.getElementById('balance').innerText = `Balance: ${(balance / solanaWeb3.LAMPORTS_PER_SOL).toFixed(4)} SOL`;
+        } catch (error) {
+          console.error(error);
+          alert('Wallet Connection Failed!');
+        }
+      }
+
+      async function payNow() {
+        try {
+          if (!provider) {
+            alert('Please connect your wallet first!');
+            return;
+          }
+
+          const amount = parseFloat(document.getElementById('amountInput').value);
+          if (isNaN(amount) || amount <= 0) {
+            alert('Please enter a valid amount in SOL!');
+            return;
+          }
+
+          const transaction = new solanaWeb3.Transaction().add(
+            solanaWeb3.SystemProgram.transfer({
+              fromPubkey: provider.publicKey,
+              toPubkey: new solanaWeb3.PublicKey(recipientAddress),
+              lamports: amount * solanaWeb3.LAMPORTS_PER_SOL,
+            })
+          );
+
+          const { signature } = await provider.signAndSendTransaction(transaction);
+
+          document.getElementById('message').innerHTML = `✨ Payment Sent!<br><a href='https://explorer.solana.com/tx/${signature}?cluster=devnet' target='_blank'>View Transaction</a>`;
+        } catch (error) {
+          console.error(error);
+          document.getElementById('message').innerText = 'Payment failed or cancelled.';
+        }
+      }
+
+      window.connectWallet = connectWallet;
+      window.payNow = payNow;
+    });
+    </script>
+
+
+</body>
+</html>

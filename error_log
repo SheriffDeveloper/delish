@@ -1,0 +1,211 @@
+[20-Apr-2025 14:26:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/signin.php(3): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 14:26:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/signup.php(3): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 14:27:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/signup.php(3): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 14:41:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 14:41:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 14:42:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 14:42:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 14:45:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 15:21:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 15:26:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/bdtavkfz/public_html/dbcon.php:7
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(7): mysqli->__construct('localhost', 'root', '', 'delishgo_db')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 7
+[20-Apr-2025 15:39:12 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 15:39:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php:8
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(8): mysqli->__construct('mysql.delishgof...', 'bdtavkfz_sherif...', '07012927918Sms@', 'bdtavkfz_delish...')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 15:42:16 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 15:42:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php:8
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(8): mysqli->__construct('mysql.delishgof...', 'bdtavkfz_sherif...', '07012927918Sms@', 'bdtavkfz_delish...')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:11:18 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:11:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php:8
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(8): mysqli->__construct('mysql.delishgof...', 'bdtavkfz_sherif...', '07012927918Sms@', 'bdtavkfz_delish...')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:11:59 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:11:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php:8
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(8): mysqli->__construct('mysql.delishgof...', 'bdtavkfz_sherif...', '07012927918Sms@', 'bdtavkfz_delish...')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:12:00 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:12:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php:8
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(8): mysqli->__construct('mysql.delishgof...', 'bdtavkfz_sherif...', '07012927918Sms@', 'bdtavkfz_delish...')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:12:38 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:12:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php:8
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(8): mysqli->__construct('mysql.delishgof...', 'bdtavkfz_sherif...', '07012927918Sms@', 'bdtavkfz_delish...')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:12:39 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:12:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php:8
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(8): mysqli->__construct('mysql.delishgof...', 'bdtavkfz_sherif...', '07012927918Sms@', 'bdtavkfz_delish...')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:36:19 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:36:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php:8
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(8): mysqli->__construct('mysql.delishgof...', 'bdtavkfz_sherif...', '07012927918Sms@', 'bdtavkfz_delish...')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:36:29 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 17:36:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for mysql.delishgofoods.com failed: Name or service not known in /home/bdtavkfz/public_html/dbcon.php:8
+Stack trace:
+#0 /home/bdtavkfz/public_html/dbcon.php(8): mysqli->__construct('mysql.delishgof...', 'bdtavkfz_sherif...', '07012927918Sms@', 'bdtavkfz_delish...')
+#1 /home/bdtavkfz/public_html/restaurants.php(7): include('/home/bdtavkfz/...')
+#2 {main}
+  thrown in /home/bdtavkfz/public_html/dbcon.php on line 8
+[20-Apr-2025 18:32:49 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[20-Apr-2025 18:32:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[20-Apr-2025 18:33:09 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[20-Apr-2025 18:33:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[21-Apr-2025 09:40:00 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[21-Apr-2025 09:40:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[21-Apr-2025 09:58:38 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[21-Apr-2025 09:58:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[22-Apr-2025 16:16:36 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[22-Apr-2025 16:16:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[24-Apr-2025 07:42:32 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[24-Apr-2025 07:42:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[24-Apr-2025 07:42:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/bdtavkfz/public_html/orders.php:6) in /home/bdtavkfz/public_html/orders.php on line 7
+[24-Apr-2025 07:42:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/bdtavkfz/public_html/orders.php:6) in /home/bdtavkfz/public_html/orders.php on line 7
+[24-Apr-2025 07:42:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/bdtavkfz/public_html/orders.php:6) in /home/bdtavkfz/public_html/orders.php on line 7
+[01-May-2025 11:16:07 UTC] PHP Warning:  Undefined variable $menu_result in /home/bdtavkfz/public_html/menupage.php on line 703
+[01-May-2025 11:16:07 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, null given in /home/bdtavkfz/public_html/menupage.php:703
+Stack trace:
+#0 /home/bdtavkfz/public_html/menupage.php(703): mysqli_num_rows(NULL)
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/menupage.php on line 703
+[01-May-2025 11:16:16 UTC] PHP Warning:  Undefined variable $menu_result in /home/bdtavkfz/public_html/menupage.php on line 703
+[01-May-2025 11:16:16 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, null given in /home/bdtavkfz/public_html/menupage.php:703
+Stack trace:
+#0 /home/bdtavkfz/public_html/menupage.php(703): mysqli_num_rows(NULL)
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/menupage.php on line 703
+[01-May-2025 11:16:54 UTC] PHP Warning:  Undefined variable $menu_result in /home/bdtavkfz/public_html/menupage.php on line 703
+[01-May-2025 11:16:54 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, null given in /home/bdtavkfz/public_html/menupage.php:703
+Stack trace:
+#0 /home/bdtavkfz/public_html/menupage.php(703): mysqli_num_rows(NULL)
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/menupage.php on line 703
+[01-May-2025 11:27:40 UTC] PHP Warning:  Undefined array key "user_email" in /home/bdtavkfz/public_html/menupage.php on line 696
+[01-May-2025 15:09:42 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[01-May-2025 15:09:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[08-May-2025 03:31:31 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[08-May-2025 03:31:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[08-May-2025 03:31:31 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[08-May-2025 03:31:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[24-May-2025 14:44:05 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[24-May-2025 14:44:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403
+[20-Jun-2025 18:51:50 UTC] PHP Warning:  Undefined variable $user_id in /home/bdtavkfz/public_html/orders.php on line 402
+[20-Jun-2025 18:51:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/bdtavkfz/public_html/orders.php:403
+Stack trace:
+#0 /home/bdtavkfz/public_html/orders.php(403): mysqli_query(Object(mysqli), 'SELECT * FROM o...')
+#1 {main}
+  thrown in /home/bdtavkfz/public_html/orders.php on line 403

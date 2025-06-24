@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DelishGo - Pay with Solana</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f0f8ff;
+    }
+    h1 {
+      color: #0c3b87;
+    }
+    #qrcode {
+      margin: 20px 0;
+    }
+    .success {
+      display: none;
+      font-size: 20px;
+      color: green;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #0077ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #0057c2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>DelishGo Payment</h1>
+  <p>Scan to complete your food/medicine delivery payment 🚀</p>
+
+  <img id="qrcode" src="" alt="Solana Pay QR Code" width="250" />
+
+  <div class="success" id="successMessage">
+    ✨ Payment Successful! Thank you for choosing DelishGo.
+  </div>
+
+  <button onclick="showSuccess()">I have completed the payment</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script>
+    const recipient = "4WFiGp7BioVceRMi8mNUtz7UbvDYRiaJbkTX6MBNFMAc"; // Your wallet
+    const amount = 0.5; // Amount in SOL (example)
+    const reference = crypto.randomUUID(); // Unique reference
+    const label = "DelishGo Delivery Payment";
+    const message = "Thank you for trusting DelishGo!";
+    const memo = "DelishGoOrder";
+
+    const solanaUrl = new URL("solana:" + recipient);
+    solanaUrl.searchParams.append("amount", amount);
+    solanaUrl.searchParams.append("reference", reference);
+    solanaUrl.searchParams.append("label", label);
+    solanaUrl.searchParams.append("message", message);
+    solanaUrl.searchParams.append("memo", memo);
+
+    // Generate QR Code
+    QRCode.toDataURL(solanaUrl.toString())
+      .then(url => {
+        document.getElementById('qrcode').src = url;
+      })
+      .catch(err => {
+        console.error(err);
+      });
+
+    function showSuccess() {
+      document.getElementById('successMessage').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
