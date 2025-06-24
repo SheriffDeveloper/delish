@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart Checkout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #333;
+    }
+    .container {
+      padding: 16px;
+    }
+    .item {
+      border-bottom: 1px solid #eee;
+      padding: 12px 0;
+      position: relative;
+    }
+    .item-title {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .item-qty {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 10px 0;
+    }
+    .item-qty button {
+      background-color: #f0f0f0;
+      border: none;
+      padding: 6px 12px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .trash {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-size: 18px;
+      color: #555;
+      cursor: pointer;
+    }
+    .coupon {
+      margin-top: 20px;
+    }
+    .coupon input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .coupon button {
+      width: 100%;
+      padding: 10px 16px;
+      background-color: #ccc;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      cursor: not-allowed;
+    }
+    .summary {
+      margin-top: 20px;
+      line-height: 2;
+    }
+    .summary div {
+      font-size: 16px;
+    }
+    .checkout-btn {
+      position: fixed;
+      bottom: 70px;
+      left: 0;
+      right: 0;
+      background-color: #ff5a00;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px 12px 0 0;
+      cursor: pointer;
+    }
+    .checkout-btn i {
+      margin-right: 8px;
+    }
+    .nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 12px 0;
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      flex-wrap: wrap;
+    }
+    .nav div {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      flex: 1 1 25%;
+    }
+    .nav i {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    @media (max-width: 600px) {
+      .item-qty {
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+      .checkout-btn {
+        font-size: 16px;
+        padding: 12px;
+      }
+      .summary div {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+      <div class="item-title">Sulphurfree Bura <span style="font-weight: normal; font-size: 14px;">570 Ml</span></div>
+      <span class="trash"><i class="fas fa-trash-alt"></i></span>
+      <div class="item-qty">
+        <button><i class="fas fa-plus"></i></button>
+        <span>1</span>
+        <button><i class="fas fa-minus"></i></button>
+      </div>
+      <div>$20</div>
+    </div>
+
+    <!-- Add Coupon -->
+    <div class="coupon">
+      <label><strong>Add Coupon</strong></label><br />
+      <input type="text" placeholder="Entry Voucher Code" />
+      <button disabled>Apply</button>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <div>Total Item: 6</div>
+      <div>Weight: 33 Kg</div>
+      <div>Price: $82.25</div>
+      <div>Price: $12.25</div>
+      <hr />
+      <div><strong>Total Price: $70.25</strong></div>
+    </div>
+  </div>
+
+  <!-- Checkout Button -->
+  <div class="checkout-btn"><i class="fas fa-shopping-basket"></i>Checkout</div>
+
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <div><i class="fas fa-home"></i>Home</div>
+    <div><i class="fas fa-utensils"></i>Restaurants</div>
+    <div><i class="fas fa-bookmark"></i>Save</div>
+    <div><a href="profile.html"><i class="fas fa-user"></i></a>Profile</div>
+  </div>
+</body>
+</html>
