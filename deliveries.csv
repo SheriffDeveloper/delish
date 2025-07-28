@@ -1,0 +1,501 @@
+Order_ID,Customer_ID,Driver_Name,Delivery_Status
+ORD001,CUST295,Aliyu,Pending
+ORD002,CUST441,Aisha,Pending
+ORD003,CUST201,Musa,Delivered
+ORD004,CUST401,Fatima,In Transit
+ORD005,CUST249,Umar,Pending
+ORD006,CUST419,Zainab,Delivered
+ORD007,CUST022,Hadiza,In Transit
+ORD008,CUST285,Musa,Delivered
+ORD009,CUST122,Binta,Delivered
+ORD010,CUST331,Hadiza,In Transit
+ORD011,CUST100,Zainab,In Transit
+ORD012,CUST130,Aisha,Pending
+ORD013,CUST361,Aliyu,Out for Delivery
+ORD014,CUST373,Binta,Cancelled
+ORD015,CUST322,Fatima,Pending
+ORD016,CUST349,Aliyu,Delivered
+ORD017,CUST309,Aisha,Delivered
+ORD018,CUST266,Umar,Pending
+ORD019,CUST112,Hadiza,Pending
+ORD020,CUST340,Aisha,Cancelled
+ORD021,CUST055,Binta,Pending
+ORD022,CUST386,Aisha,In Transit
+ORD023,CUST323,Umar,Pending
+ORD024,CUST445,Adamu,Cancelled
+ORD025,CUST217,Fatima,Pending
+ORD026,CUST446,Adamu,Delivered
+ORD027,CUST189,Binta,Out for Delivery
+ORD028,CUST370,Fatima,Cancelled
+ORD029,CUST342,Aliyu,In Transit
+ORD030,CUST316,Aliyu,Cancelled
+ORD031,CUST248,Umar,Delivered
+ORD032,CUST216,Zainab,Delivered
+ORD033,CUST058,Zainab,Pending
+ORD034,CUST211,Binta,In Transit
+ORD035,CUST072,Musa,Pending
+ORD036,CUST062,Aisha,Pending
+ORD037,CUST376,Umar,Delivered
+ORD038,CUST148,Fatima,Pending
+ORD039,CUST257,Fatima,Cancelled
+ORD040,CUST500,Zainab,Cancelled
+ORD041,CUST285,Hadiza,In Transit
+ORD042,CUST334,Aisha,Delivered
+ORD043,CUST254,Umar,Delivered
+ORD044,CUST286,Binta,Pending
+ORD045,CUST020,Binta,Out for Delivery
+ORD046,CUST489,Fatima,Out for Delivery
+ORD047,CUST280,Aisha,Cancelled
+ORD048,CUST256,Fatima,Pending
+ORD049,CUST147,Hadiza,In Transit
+ORD050,CUST402,Umar,Pending
+ORD051,CUST422,Musa,Out for Delivery
+ORD052,CUST430,Fatima,Out for Delivery
+ORD053,CUST288,Binta,Out for Delivery
+ORD054,CUST100,Aisha,In Transit
+ORD055,CUST310,Fatima,In Transit
+ORD056,CUST047,Umar,Delivered
+ORD057,CUST198,Musa,Pending
+ORD058,CUST490,Adamu,Delivered
+ORD059,CUST225,Zainab,In Transit
+ORD060,CUST147,Aliyu,Cancelled
+ORD061,CUST315,Musa,Cancelled
+ORD062,CUST491,Hassan,Pending
+ORD063,CUST383,Adamu,Pending
+ORD064,CUST159,Umar,Out for Delivery
+ORD065,CUST184,Hadiza,Out for Delivery
+ORD066,CUST307,Aisha,Delivered
+ORD067,CUST216,Aliyu,Cancelled
+ORD068,CUST312,Aliyu,Delivered
+ORD069,CUST142,Hadiza,Out for Delivery
+ORD070,CUST004,Hassan,Delivered
+ORD071,CUST480,Adamu,In Transit
+ORD072,CUST106,Binta,In Transit
+ORD073,CUST190,Aisha,Pending
+ORD074,CUST223,Adamu,In Transit
+ORD075,CUST054,Hadiza,Cancelled
+ORD076,CUST154,Zainab,Delivered
+ORD077,CUST249,Fatima,Delivered
+ORD078,CUST139,Zainab,Pending
+ORD079,CUST485,Zainab,Out for Delivery
+ORD080,CUST157,Aisha,Delivered
+ORD081,CUST390,Hassan,In Transit
+ORD082,CUST300,Binta,Out for Delivery
+ORD083,CUST360,Umar,In Transit
+ORD084,CUST103,Aliyu,In Transit
+ORD085,CUST151,Fatima,Delivered
+ORD086,CUST293,Hassan,In Transit
+ORD087,CUST333,Hadiza,Out for Delivery
+ORD088,CUST365,Fatima,Delivered
+ORD089,CUST024,Binta,Out for Delivery
+ORD090,CUST292,Aisha,Delivered
+ORD091,CUST081,Umar,Pending
+ORD092,CUST412,Binta,Cancelled
+ORD093,CUST004,Aliyu,Pending
+ORD094,CUST140,Hadiza,Out for Delivery
+ORD095,CUST347,Umar,In Transit
+ORD096,CUST212,Zainab,Out for Delivery
+ORD097,CUST095,Aliyu,Pending
+ORD098,CUST276,Umar,Delivered
+ORD099,CUST057,Binta,Cancelled
+ORD100,CUST350,Musa,Cancelled
+ORD101,CUST458,Umar,Cancelled
+ORD102,CUST012,Aisha,Pending
+ORD103,CUST127,Adamu,Out for Delivery
+ORD104,CUST103,Aliyu,Delivered
+ORD105,CUST434,Aliyu,Pending
+ORD106,CUST069,Musa,In Transit
+ORD107,CUST360,Binta,Delivered
+ORD108,CUST178,Adamu,Delivered
+ORD109,CUST328,Hassan,Pending
+ORD110,CUST008,Musa,Cancelled
+ORD111,CUST190,Zainab,Delivered
+ORD112,CUST140,Binta,In Transit
+ORD113,CUST149,Binta,Delivered
+ORD114,CUST169,Aliyu,Cancelled
+ORD115,CUST233,Aliyu,Cancelled
+ORD116,CUST462,Musa,Delivered
+ORD117,CUST354,Zainab,Cancelled
+ORD118,CUST151,Aisha,Pending
+ORD119,CUST227,Zainab,Cancelled
+ORD120,CUST268,Aliyu,Pending
+ORD121,CUST299,Binta,Cancelled
+ORD122,CUST252,Aisha,In Transit
+ORD123,CUST295,Aliyu,Delivered
+ORD124,CUST282,Musa,Out for Delivery
+ORD125,CUST323,Aisha,Delivered
+ORD126,CUST231,Aisha,Pending
+ORD127,CUST287,Fatima,Cancelled
+ORD128,CUST451,Musa,Delivered
+ORD129,CUST191,Hadiza,Pending
+ORD130,CUST040,Hadiza,In Transit
+ORD131,CUST457,Umar,In Transit
+ORD132,CUST124,Hassan,Pending
+ORD133,CUST144,Aliyu,Delivered
+ORD134,CUST300,Musa,In Transit
+ORD135,CUST156,Fatima,In Transit
+ORD136,CUST373,Aisha,Pending
+ORD137,CUST097,Hassan,In Transit
+ORD138,CUST243,Aisha,Cancelled
+ORD139,CUST194,Adamu,In Transit
+ORD140,CUST151,Aliyu,Delivered
+ORD141,CUST025,Hadiza,Delivered
+ORD142,CUST188,Aisha,In Transit
+ORD143,CUST190,Zainab,Pending
+ORD144,CUST265,Hassan,Out for Delivery
+ORD145,CUST146,Adamu,In Transit
+ORD146,CUST387,Zainab,Delivered
+ORD147,CUST176,Adamu,In Transit
+ORD148,CUST291,Hadiza,Cancelled
+ORD149,CUST333,Adamu,Delivered
+ORD150,CUST195,Hassan,In Transit
+ORD151,CUST430,Adamu,Cancelled
+ORD152,CUST038,Binta,Out for Delivery
+ORD153,CUST085,Hadiza,Out for Delivery
+ORD154,CUST250,Adamu,Cancelled
+ORD155,CUST079,Zainab,Pending
+ORD156,CUST494,Hassan,Cancelled
+ORD157,CUST127,Adamu,Cancelled
+ORD158,CUST238,Adamu,Pending
+ORD159,CUST228,Zainab,Cancelled
+ORD160,CUST143,Umar,In Transit
+ORD161,CUST474,Hassan,Cancelled
+ORD162,CUST300,Adamu,Cancelled
+ORD163,CUST304,Hassan,Delivered
+ORD164,CUST369,Umar,Pending
+ORD165,CUST164,Fatima,Out for Delivery
+ORD166,CUST207,Zainab,Cancelled
+ORD167,CUST391,Adamu,Pending
+ORD168,CUST385,Umar,Cancelled
+ORD169,CUST151,Binta,Out for Delivery
+ORD170,CUST088,Binta,In Transit
+ORD171,CUST323,Fatima,Cancelled
+ORD172,CUST433,Adamu,Pending
+ORD173,CUST033,Aliyu,Out for Delivery
+ORD174,CUST193,Fatima,Delivered
+ORD175,CUST445,Fatima,Pending
+ORD176,CUST131,Adamu,Delivered
+ORD177,CUST286,Musa,Pending
+ORD178,CUST359,Aliyu,Delivered
+ORD179,CUST401,Hassan,Cancelled
+ORD180,CUST481,Aliyu,Pending
+ORD181,CUST174,Umar,Pending
+ORD182,CUST058,Aliyu,Out for Delivery
+ORD183,CUST380,Umar,Pending
+ORD184,CUST047,Hassan,In Transit
+ORD185,CUST321,Hadiza,Out for Delivery
+ORD186,CUST282,Fatima,Cancelled
+ORD187,CUST095,Zainab,Pending
+ORD188,CUST130,Aisha,Pending
+ORD189,CUST154,Umar,Out for Delivery
+ORD190,CUST464,Hassan,Delivered
+ORD191,CUST458,Zainab,Cancelled
+ORD192,CUST419,Adamu,In Transit
+ORD193,CUST201,Hassan,Pending
+ORD194,CUST395,Aisha,Delivered
+ORD195,CUST266,Musa,In Transit
+ORD196,CUST343,Hadiza,In Transit
+ORD197,CUST061,Adamu,Out for Delivery
+ORD198,CUST219,Binta,Delivered
+ORD199,CUST482,Umar,Pending
+ORD200,CUST059,Aliyu,Pending
+ORD201,CUST073,Hadiza,Out for Delivery
+ORD202,CUST224,Zainab,Delivered
+ORD203,CUST318,Hadiza,Pending
+ORD204,CUST110,Hassan,Delivered
+ORD205,CUST255,Musa,In Transit
+ORD206,CUST232,Binta,Out for Delivery
+ORD207,CUST043,Adamu,Cancelled
+ORD208,CUST440,Fatima,Pending
+ORD209,CUST352,Binta,Pending
+ORD210,CUST298,Hadiza,Cancelled
+ORD211,CUST232,Aliyu,Delivered
+ORD212,CUST343,Hadiza,In Transit
+ORD213,CUST372,Aliyu,In Transit
+ORD214,CUST294,Adamu,Cancelled
+ORD215,CUST356,Musa,Out for Delivery
+ORD216,CUST112,Umar,Out for Delivery
+ORD217,CUST274,Zainab,Delivered
+ORD218,CUST399,Zainab,In Transit
+ORD219,CUST159,Binta,Out for Delivery
+ORD220,CUST303,Binta,In Transit
+ORD221,CUST297,Hassan,Pending
+ORD222,CUST387,Aisha,Pending
+ORD223,CUST384,Hadiza,In Transit
+ORD224,CUST132,Musa,Out for Delivery
+ORD225,CUST162,Hadiza,Delivered
+ORD226,CUST377,Aisha,Delivered
+ORD227,CUST484,Umar,In Transit
+ORD228,CUST291,Aisha,Cancelled
+ORD229,CUST277,Musa,Out for Delivery
+ORD230,CUST336,Hassan,In Transit
+ORD231,CUST409,Aliyu,Pending
+ORD232,CUST194,Binta,Delivered
+ORD233,CUST369,Adamu,Out for Delivery
+ORD234,CUST278,Musa,Cancelled
+ORD235,CUST455,Hassan,Pending
+ORD236,CUST444,Hassan,Cancelled
+ORD237,CUST174,Fatima,Cancelled
+ORD238,CUST268,Fatima,In Transit
+ORD239,CUST500,Musa,Out for Delivery
+ORD240,CUST251,Musa,In Transit
+ORD241,CUST203,Adamu,In Transit
+ORD242,CUST041,Fatima,Pending
+ORD243,CUST384,Adamu,Cancelled
+ORD244,CUST456,Musa,Cancelled
+ORD245,CUST291,Umar,Cancelled
+ORD246,CUST099,Hassan,Pending
+ORD247,CUST357,Hassan,Cancelled
+ORD248,CUST092,Binta,Cancelled
+ORD249,CUST290,Zainab,In Transit
+ORD250,CUST266,Aliyu,Delivered
+ORD251,CUST171,Hadiza,Delivered
+ORD252,CUST233,Adamu,Out for Delivery
+ORD253,CUST026,Hassan,Delivered
+ORD254,CUST221,Fatima,Delivered
+ORD255,CUST405,Fatima,Cancelled
+ORD256,CUST263,Aisha,Out for Delivery
+ORD257,CUST267,Aisha,In Transit
+ORD258,CUST284,Aliyu,In Transit
+ORD259,CUST207,Fatima,Delivered
+ORD260,CUST225,Zainab,Out for Delivery
+ORD261,CUST091,Umar,Out for Delivery
+ORD262,CUST416,Hassan,Cancelled
+ORD263,CUST132,Aliyu,Out for Delivery
+ORD264,CUST418,Umar,In Transit
+ORD265,CUST151,Hassan,In Transit
+ORD266,CUST023,Fatima,Out for Delivery
+ORD267,CUST310,Zainab,In Transit
+ORD268,CUST159,Hadiza,Delivered
+ORD269,CUST214,Musa,Cancelled
+ORD270,CUST084,Aliyu,Pending
+ORD271,CUST178,Adamu,Delivered
+ORD272,CUST219,Fatima,Delivered
+ORD273,CUST027,Hadiza,Delivered
+ORD274,CUST185,Hassan,Cancelled
+ORD275,CUST257,Hassan,Out for Delivery
+ORD276,CUST471,Hassan,Delivered
+ORD277,CUST033,Hassan,Pending
+ORD278,CUST074,Hassan,In Transit
+ORD279,CUST377,Zainab,In Transit
+ORD280,CUST132,Aliyu,Delivered
+ORD281,CUST179,Hassan,Out for Delivery
+ORD282,CUST172,Aisha,Out for Delivery
+ORD283,CUST214,Hassan,Pending
+ORD284,CUST036,Fatima,Pending
+ORD285,CUST122,Umar,Pending
+ORD286,CUST124,Hadiza,Cancelled
+ORD287,CUST481,Hassan,Cancelled
+ORD288,CUST391,Aisha,Pending
+ORD289,CUST248,Umar,In Transit
+ORD290,CUST265,Binta,Pending
+ORD291,CUST113,Umar,In Transit
+ORD292,CUST289,Fatima,Delivered
+ORD293,CUST069,Hassan,Pending
+ORD294,CUST204,Adamu,Pending
+ORD295,CUST474,Aisha,In Transit
+ORD296,CUST360,Musa,Cancelled
+ORD297,CUST469,Fatima,Out for Delivery
+ORD298,CUST388,Binta,Pending
+ORD299,CUST237,Aliyu,Cancelled
+ORD300,CUST333,Hassan,Out for Delivery
+ORD301,CUST427,Hassan,Out for Delivery
+ORD302,CUST330,Fatima,Cancelled
+ORD303,CUST302,Binta,In Transit
+ORD304,CUST420,Binta,Out for Delivery
+ORD305,CUST137,Aliyu,Out for Delivery
+ORD306,CUST348,Fatima,Out for Delivery
+ORD307,CUST055,Aliyu,Cancelled
+ORD308,CUST184,Hassan,Pending
+ORD309,CUST066,Adamu,In Transit
+ORD310,CUST399,Hadiza,In Transit
+ORD311,CUST255,Fatima,Pending
+ORD312,CUST071,Musa,Cancelled
+ORD313,CUST396,Umar,Cancelled
+ORD314,CUST437,Fatima,In Transit
+ORD315,CUST145,Fatima,Pending
+ORD316,CUST393,Umar,In Transit
+ORD317,CUST289,Umar,Cancelled
+ORD318,CUST323,Fatima,Pending
+ORD319,CUST056,Zainab,Delivered
+ORD320,CUST338,Zainab,In Transit
+ORD321,CUST272,Binta,Delivered
+ORD322,CUST455,Adamu,Pending
+ORD323,CUST211,Aliyu,Cancelled
+ORD324,CUST485,Zainab,Pending
+ORD325,CUST346,Binta,In Transit
+ORD326,CUST410,Hassan,In Transit
+ORD327,CUST438,Aisha,In Transit
+ORD328,CUST226,Aliyu,In Transit
+ORD329,CUST140,Binta,Out for Delivery
+ORD330,CUST174,Fatima,In Transit
+ORD331,CUST060,Binta,Out for Delivery
+ORD332,CUST009,Aisha,Delivered
+ORD333,CUST165,Umar,Cancelled
+ORD334,CUST050,Hassan,Pending
+ORD335,CUST191,Musa,Cancelled
+ORD336,CUST264,Umar,Cancelled
+ORD337,CUST104,Aliyu,Delivered
+ORD338,CUST095,Musa,Out for Delivery
+ORD339,CUST130,Hassan,Out for Delivery
+ORD340,CUST406,Binta,Out for Delivery
+ORD341,CUST425,Aisha,Delivered
+ORD342,CUST258,Binta,In Transit
+ORD343,CUST443,Hadiza,Cancelled
+ORD344,CUST312,Musa,Delivered
+ORD345,CUST293,Hassan,Out for Delivery
+ORD346,CUST365,Aliyu,Delivered
+ORD347,CUST278,Zainab,Out for Delivery
+ORD348,CUST274,Aisha,Pending
+ORD349,CUST230,Aliyu,Cancelled
+ORD350,CUST149,Hadiza,In Transit
+ORD351,CUST473,Zainab,Pending
+ORD352,CUST064,Fatima,In Transit
+ORD353,CUST074,Aisha,In Transit
+ORD354,CUST300,Fatima,Cancelled
+ORD355,CUST054,Adamu,Delivered
+ORD356,CUST402,Musa,In Transit
+ORD357,CUST482,Hadiza,Pending
+ORD358,CUST237,Aisha,Cancelled
+ORD359,CUST339,Hassan,Delivered
+ORD360,CUST263,Umar,Pending
+ORD361,CUST322,Musa,Delivered
+ORD362,CUST313,Hassan,Cancelled
+ORD363,CUST249,Aisha,Delivered
+ORD364,CUST036,Binta,Delivered
+ORD365,CUST195,Aliyu,Delivered
+ORD366,CUST287,Umar,Pending
+ORD367,CUST334,Hadiza,Cancelled
+ORD368,CUST465,Zainab,In Transit
+ORD369,CUST135,Aliyu,In Transit
+ORD370,CUST005,Zainab,Pending
+ORD371,CUST008,Umar,In Transit
+ORD372,CUST455,Musa,Pending
+ORD373,CUST263,Binta,Delivered
+ORD374,CUST073,Fatima,Pending
+ORD375,CUST281,Fatima,In Transit
+ORD376,CUST190,Aisha,Pending
+ORD377,CUST467,Hadiza,In Transit
+ORD378,CUST005,Umar,Cancelled
+ORD379,CUST234,Fatima,Cancelled
+ORD380,CUST366,Zainab,Delivered
+ORD381,CUST450,Zainab,In Transit
+ORD382,CUST478,Binta,Pending
+ORD383,CUST093,Binta,Cancelled
+ORD384,CUST334,Aisha,Cancelled
+ORD385,CUST145,Hadiza,Cancelled
+ORD386,CUST151,Aliyu,Cancelled
+ORD387,CUST480,Hadiza,Cancelled
+ORD388,CUST005,Hassan,Out for Delivery
+ORD389,CUST170,Hassan,Pending
+ORD390,CUST464,Hassan,Delivered
+ORD391,CUST046,Binta,Pending
+ORD392,CUST073,Musa,Pending
+ORD393,CUST207,Aliyu,Delivered
+ORD394,CUST168,Hadiza,Delivered
+ORD395,CUST302,Zainab,In Transit
+ORD396,CUST443,Fatima,Pending
+ORD397,CUST358,Adamu,Out for Delivery
+ORD398,CUST368,Binta,Cancelled
+ORD399,CUST437,Umar,In Transit
+ORD400,CUST383,Adamu,Pending
+ORD401,CUST430,Hadiza,Pending
+ORD402,CUST001,Umar,Out for Delivery
+ORD403,CUST094,Adamu,Cancelled
+ORD404,CUST485,Umar,Delivered
+ORD405,CUST441,Hassan,Delivered
+ORD406,CUST444,Aisha,Pending
+ORD407,CUST348,Umar,Cancelled
+ORD408,CUST289,Aliyu,Cancelled
+ORD409,CUST004,Musa,Pending
+ORD410,CUST298,Zainab,In Transit
+ORD411,CUST091,Aisha,Cancelled
+ORD412,CUST391,Umar,Out for Delivery
+ORD413,CUST458,Aliyu,Pending
+ORD414,CUST173,Aliyu,Out for Delivery
+ORD415,CUST308,Aisha,Pending
+ORD416,CUST141,Hassan,Delivered
+ORD417,CUST067,Musa,Pending
+ORD418,CUST467,Hassan,Out for Delivery
+ORD419,CUST458,Binta,Delivered
+ORD420,CUST359,Hadiza,Out for Delivery
+ORD421,CUST032,Hadiza,Pending
+ORD422,CUST095,Aisha,Delivered
+ORD423,CUST188,Umar,In Transit
+ORD424,CUST350,Fatima,Delivered
+ORD425,CUST085,Binta,Pending
+ORD426,CUST030,Aliyu,In Transit
+ORD427,CUST026,Aisha,Out for Delivery
+ORD428,CUST297,Zainab,In Transit
+ORD429,CUST500,Aliyu,Delivered
+ORD430,CUST101,Binta,Cancelled
+ORD431,CUST358,Adamu,Out for Delivery
+ORD432,CUST483,Musa,Out for Delivery
+ORD433,CUST201,Adamu,In Transit
+ORD434,CUST468,Binta,Delivered
+ORD435,CUST434,Musa,Delivered
+ORD436,CUST140,Fatima,In Transit
+ORD437,CUST053,Zainab,Delivered
+ORD438,CUST003,Zainab,Pending
+ORD439,CUST303,Musa,Cancelled
+ORD440,CUST392,Adamu,Delivered
+ORD441,CUST398,Aliyu,Cancelled
+ORD442,CUST490,Adamu,Pending
+ORD443,CUST129,Umar,Delivered
+ORD444,CUST236,Zainab,In Transit
+ORD445,CUST139,Musa,Out for Delivery
+ORD446,CUST386,Aisha,Delivered
+ORD447,CUST422,Aliyu,Out for Delivery
+ORD448,CUST138,Hadiza,Delivered
+ORD449,CUST302,Musa,Out for Delivery
+ORD450,CUST479,Aisha,Delivered
+ORD451,CUST193,Fatima,Pending
+ORD452,CUST380,Aisha,Cancelled
+ORD453,CUST241,Fatima,Pending
+ORD454,CUST192,Musa,Delivered
+ORD455,CUST083,Binta,In Transit
+ORD456,CUST264,Umar,In Transit
+ORD457,CUST171,Aisha,Out for Delivery
+ORD458,CUST398,Umar,Out for Delivery
+ORD459,CUST439,Umar,Out for Delivery
+ORD460,CUST353,Aliyu,Delivered
+ORD461,CUST221,Zainab,Delivered
+ORD462,CUST262,Adamu,Pending
+ORD463,CUST423,Hadiza,Pending
+ORD464,CUST306,Hadiza,In Transit
+ORD465,CUST223,Adamu,Cancelled
+ORD466,CUST152,Adamu,Cancelled
+ORD467,CUST258,Aisha,In Transit
+ORD468,CUST047,Adamu,Out for Delivery
+ORD469,CUST349,Fatima,Cancelled
+ORD470,CUST236,Zainab,Out for Delivery
+ORD471,CUST431,Binta,Cancelled
+ORD472,CUST263,Hadiza,Delivered
+ORD473,CUST453,Adamu,Out for Delivery
+ORD474,CUST239,Hadiza,Pending
+ORD475,CUST198,Aisha,Cancelled
+ORD476,CUST013,Hassan,In Transit
+ORD477,CUST242,Musa,In Transit
+ORD478,CUST177,Hadiza,Out for Delivery
+ORD479,CUST020,Fatima,Cancelled
+ORD480,CUST296,Aisha,In Transit
+ORD481,CUST118,Musa,In Transit
+ORD482,CUST398,Umar,Pending
+ORD483,CUST454,Hadiza,In Transit
+ORD484,CUST146,Hassan,Pending
+ORD485,CUST324,Fatima,Pending
+ORD486,CUST438,Musa,Pending
+ORD487,CUST037,Binta,Pending
+ORD488,CUST096,Musa,Cancelled
+ORD489,CUST004,Binta,Cancelled
+ORD490,CUST059,Adamu,In Transit
+ORD491,CUST418,Aisha,Pending
+ORD492,CUST300,Musa,Pending
+ORD493,CUST065,Aisha,Pending
+ORD494,CUST492,Fatima,Out for Delivery
+ORD495,CUST369,Hadiza,Pending
+ORD496,CUST119,Adamu,In Transit
+ORD497,CUST367,Hadiza,Cancelled
+ORD498,CUST417,Binta,Pending
+ORD499,CUST257,Hadiza,Pending
+ORD500,CUST441,Umar,Out for Delivery

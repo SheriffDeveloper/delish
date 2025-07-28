@@ -18,6 +18,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-right: 30%;
       }
       .navbar .brand {
         font-size: 24px;
@@ -47,6 +48,7 @@
         border-radius: 15px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         margin-top: 20px;
+        margin-right: 32%;
       }
       .restaurant {
         display: flex;
@@ -82,41 +84,25 @@
       /* Chatbot styles */
       .chatbot-container {
         position: fixed;
-        bottom: 30px;
-        right: 30px;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 100%;
         z-index: 9999;
-      }
-      .chatbot-icon {
-        width: 60px;
-        height: 60px;
-        background: #fff;
-        border-radius: 50%;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: box-shadow 0.3s;
-      }
-      .chatbot-icon img {
-        width: 40px;
-        height: 40px;
-      }
-      .chatbot-icon:hover {
-        box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        flex-direction: column;
+        background: #fff;
+        box-shadow: -4px 0 24px rgba(0,0,0,0.25);
       }
       .chat-window {
-        display: none;
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        bottom: 70px;
-        right: 0;
-        width: 320px;
+        height: 100%;
+        width: 100%;
         background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+        border-radius: 0;
+        box-shadow: none;
         overflow: hidden;
-        animation: fadeIn 0.3s;
       }
       .chat-header {
         background: #ff4d00;
@@ -130,7 +116,6 @@
         padding: 12px;
         background: #f9f9f9;
         overflow-y: auto;
-        max-height: 220px;
       }
       .chat-input {
         display: flex;
@@ -170,10 +155,6 @@
       .message-bot {
         background: #eee;
         align-self: flex-start;
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(30px); }
-        to { opacity: 1; transform: translateY(0); }
       }
     </style>
   </head>
@@ -220,9 +201,6 @@
 
     <!-- Chatbot -->
     <div class="chatbot-container">
-      <div class="chatbot-icon">
-        <img src="https://cdn-icons-png.flaticon.com/512/121/121135.png" alt="Chatbot">
-      </div>
       <div class="chat-window">
         <div class="chat-header">DelishGo Assistant</div>
         <div class="chat-messages"></div>
@@ -234,15 +212,9 @@
     </div>
 
     <script>
-      const chatbotIcon = document.querySelector('.chatbot-icon');
-      const chatWindow = document.querySelector('.chat-window');
       const chatMessages = document.querySelector('.chat-messages');
       const chatInput = document.querySelector('.chat-input input');
       const sendButton = document.querySelector('.chat-input button');
-
-      chatbotIcon.addEventListener('click', () => {
-        chatWindow.style.display = chatWindow.style.display === 'flex' ? 'none' : 'flex';
-      });
 
       sendButton.addEventListener('click', () => {
         const userMessage = chatInput.value;
