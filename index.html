@@ -458,27 +458,30 @@
         chatMessages.scrollTop = chatMessages.scrollHeight;
       }
 
-      function handleBotResponse(userMessage) {
-        const lowerMessage = userMessage.toLowerCase();
-        let botMessage = "I'm sorry, I don't understand. Can you rephrase?";
+      async function handleBotResponse(userMessage) {
+        try {
+          const response = await fetch('chatbot_api.php', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: userMessage })
+          });
 
-        if (lowerMessage.includes('hello') || lowerMessage.includes('hi')) {
-          botMessage = 'Hi there! How can I help you today?';
-        } else if (lowerMessage.includes('restaurant')) {
-          botMessage = 'You can find a list of restaurants on our Restaurants page. We have amazing local options!';
-        } else if (lowerMessage.includes('order')) {
-          botMessage = 'To place an order, please select a restaurant and add items to your cart. It\'s quick and easy!';
-        } else if (lowerMessage.includes('delivery')) {
-          botMessage = 'We offer fast delivery to your location. Enter your address to see available restaurants.';
-        } else if (lowerMessage.includes('help')) {
-          botMessage = 'I can help you find restaurants, place orders, or answer questions about our delivery service.';
-        } else if (lowerMessage.includes('thank')) {
-          botMessage = 'You\'re welcome! Is there anything else I can help you with?';
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+
+          const data = await response.json();
+          const botMessage = data.reply;
+
+          setTimeout(() => {
+            addMessage('bot', botMessage);
+          }, 500);
+        } catch (error) {
+          console.error('Error fetching bot response:', error);
+          addMessage('bot', 'Sorry, something went wrong. Please try again later.');
         }
-
-        setTimeout(() => {
-          addMessage('bot', botMessage);
-        }, 500);
       }
     });
   </script>
